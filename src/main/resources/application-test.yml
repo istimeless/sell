@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.78.130/sell?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.78.130
+    port: 6379
+server:
+  servlet:
+    context-path: /sell
+wechat:
+  mpAppId: wxbcbfb086efef5f09
+  mpAppSecret: b560b1b193b32d61f7baa0aa2eece1d1
+  openAppId:
+  openAppSecret:
+  mchId:
+  mchKey:
+  keyPath:
+  notifyUrl: http://istimeless.natapp1.cc/sell/pay/notify
+  weChatMpAuthorize: http://istimeless.natapp1.cc
+  weChatOpenAuthorize: http://istimeless.natapp1.cc
+  templateId:
+    orderStatus: 
+project:
+  sell: http://istimeless.natapp1.cc
+  
